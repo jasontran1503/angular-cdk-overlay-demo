@@ -1,0 +1,44 @@
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet quibusdam asperiores harum optio doloremque
+  animi alias eaque doloribus quos quo, labore id velit reprehenderit cum nostrum magni quia corporis!
+</h1>
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet quibusdam asperiores harum optio doloremque
+  animi alias eaque doloribus quos quo, labore id velit reprehenderit cum nostrum magni quia corporis!
+</h1>
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet quibusdam asperiores harum optio doloremque
+  animi alias eaque doloribus quos quo, labore id velit reprehenderit cum nostrum magni quia corporis!
+</h1>
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet quibusdam asperiores harum optio doloremque
+  animi alias eaque doloribus quos quo, labore id velit reprehenderit cum nostrum magni quia corporis!
+</h1>
+<h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt amet quibusdam asperiores harum optio doloremque
+  animi alias eaque doloribus quos quo, labore id velit reprehenderit cum nostrum magni quia corporis!
+</h1>
+<div>
+  <input type="text" [formControl]="inputControl" [appSuggestionTrigger]="suggestionTmpl" />
+
+  <!-- <button (click)="showAll()">show all</button> -->
+
+  <app-suggestion-list
+    [inputValue]="inputControl.value"
+    [dataSource]="dataSource"
+    [isShowAll]="isShowAll"
+    bindKeyFilter="name"
+    #suggestionTmpl
+  >
+  </app-suggestion-list>
+</div>
+
+<!-- <app-suggestion-list
+  [inputValue]="inputControl.value"
+  [dataSource]="dataSource"
+  [isShowAll]="isShowAll"
+  bindKeyFilter="name"
+  #suggestionTmpl
+>
+  <app-list-items></app-list-items>
+</app-suggestion-list> -->

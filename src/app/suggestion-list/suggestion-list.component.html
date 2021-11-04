@@ -1,0 +1,15 @@
+<!-- <ng-template>
+  <ng-content></ng-content>
+</ng-template> -->
+<ng-template>
+  <ul style="height: 150px; overflow-y: auto" #elementRef>
+    <li
+      style="height: 30px; background-color: cornflowerblue"
+      *ngFor="let item of items; index as i"
+      [style.color]="activeItemIndex === i ? 'red' : ''"
+
+    >
+      {{ item.name }}
+    </li>
+  </ul>
+</ng-template>
